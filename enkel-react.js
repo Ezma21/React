@@ -20,5 +20,5 @@ function Header() {
 	);
 }
 
-// Rendera komponenten till "root"-elementet i HTML
-ReactDOM.render(<Header />, document.getElementById("root"));
+// Rendera komponenten till "my-component"-elementet i HTML
+ReactDOM.render(<Header />, document.getElementById("my-component"));
