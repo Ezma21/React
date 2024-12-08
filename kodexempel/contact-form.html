@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/* lyft ut denna css till ett external sheet */
+			.contact-form-section {
+				display: flex;
+				flex-direction: column;
+			}
+			.input-holder {
+				display: flex;
+				flex-direction: column;
+				padding: 20px;
+			}
+			.input-holder label {
+				padding-bottom: 20px;
+			}
+			.hidden-element {
+				display: none;
+			}
+
+			.image-and-text {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="contact-form-section">
+			<h1>Kontaktformulär</h1>
+			<form id="contact-form" method="GET">
+				<div class="input-holder">
+					<label for="firstName">Name:</label>
+					<input name="firstName" type="text" required />
+				</div>
+				<div class="input-holder">
+					<label for="email">E-post:</label>
+					<input name="email" type="email" required />
+				</div>
+				<div class="input-holder">
+					<label for="phone">Telefonnummer:</label>
+					<input id="phoneField" name="phone" type="text" required />
+					<span id="phoneError"></span>
+				</div>
+				<button type="submit">Skicka</button>
+			</form>
+			<h2 id="thankYouMessage" class="hidden-element">
+				Tack för ditt meddelande!
+			</h2>
+		</section>
+	</body>
+	<script src="contact-form.js"></script>
+</html>
